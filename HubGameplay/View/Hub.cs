@@ -52,6 +52,15 @@ namespace HubDeGames.View
 
         }
 
+        public static void Rankingjogodavelhamenu()
+        {
+            Console.WriteLine("1 - Ver Ranking");
+            Console.WriteLine();
+            Console.WriteLine("0 - Voltar");
+            Console.WriteLine();
+            Console.Write("Escolha uma das opções: ");
+        }
+
 
     }
 }

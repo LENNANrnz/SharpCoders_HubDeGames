@@ -11,6 +11,8 @@ namespace HubGameplay.Models
         public int id1 { get; set; }
         public int id2 { get; set; }
 
+        public bool logou { get; set; }
+
         public Playersids() { }
         public Playersids(int id1, int id2)
         {

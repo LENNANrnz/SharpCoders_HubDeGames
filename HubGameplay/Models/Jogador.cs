@@ -6,7 +6,7 @@ using System.Text.Json;
 
 namespace HubDeGames.Entities
 {
-    public class Jogador : IMetodos
+    public class Jogador
     {
 
         protected Jogador(in object value)
@@ -17,7 +17,7 @@ namespace HubDeGames.Entities
         public string Nome { get; set; }
         public string Senha { get; set; }
         public string Nickname { get; set; }
-        public int PontosTotaisJogodaVelha { get; private set; }
+        public int PontosTotaisJogodaVelha { get; set; }
 
         public Jogador() { }
 
@@ -35,12 +35,15 @@ namespace HubDeGames.Entities
             public int value2;
         }
 
-        public int MarcaPonto(Jogador u)
-        {
-            return u.PontosTotaisJogodaVelha += 1;
-        }
         public static void RankingJogodaVelha()
         {
+            string arquivojson = @"D:\\Minhas coisas\\Projetos viasula studio\\SharpCoders\\ProjetoHubDeJogos\\HubGameplay\\HubGameplay\\Players.json";
+            var option = new JsonSerializerOptions { WriteIndented = true };
+            string jsonlines = File.ReadAllText(arquivojson);
+            List<Jogador>? lista;
+            lista = System.Text.Json.JsonSerializer.Deserialize<List<Jogador>>(jsonlines, option);
+
+
 
         }
 
@@ -145,6 +148,7 @@ namespace HubDeGames.Entities
 
             playerid.id1 = z;
             playerid.id2 = y;
+            playerid.logou = true;
 
         }
         public static void ListarContas()
@@ -155,6 +159,7 @@ namespace HubDeGames.Entities
             string jsonlines = File.ReadAllText(arquivojson);
             List<Jogador>? lista;
             lista = System.Text.Json.JsonSerializer.Deserialize<List<Jogador>>(jsonlines, option);
+
 
             foreach (Jogador jogador in lista)
             {
@@ -230,6 +235,7 @@ namespace HubDeGames.Entities
         {
             return $" Nome: {Nome}\n Senha: {Senha}\n Nick: {Nickname}\n Pontos Jogo Da Velha: {PontosTotaisJogodaVelha} \n";
         }
+
 
     }
 }

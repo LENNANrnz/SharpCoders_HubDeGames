@@ -3,12 +3,18 @@
     "Nome": "Lennan",
     "Senha": "123456",
     "Nickname": "lennanrnz",
-    "PontosTotaisJogodaVelha": 0
+    "PontosTotaisJogodaVelha": 4
   },
   {
     "Nome": "matheus",
     "Senha": "12345",
     "Nickname": "matheuszin",
+    "PontosTotaisJogodaVelha": 2
+  },
+  {
+    "Nome": "guilherme",
+    "Senha": "123",
+    "Nickname": "guialves",
     "PontosTotaisJogodaVelha": 0
   }
 ]
