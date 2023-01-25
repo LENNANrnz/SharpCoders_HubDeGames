@@ -13,3 +13,6 @@ D:\Minhas coisas\Projetos viasula studio\SharpCoders\ProjetoHubDeJogos\HubGamepl
 D:\Minhas coisas\Projetos viasula studio\SharpCoders\ProjetoHubDeJogos\HubGameplay\HubGameplay\obj\Debug\net6.0\HubGameplay.pdb
 D:\Minhas coisas\Projetos viasula studio\SharpCoders\ProjetoHubDeJogos\HubGameplay\HubGameplay\obj\Debug\net6.0\HubGameplay.genruntimeconfig.cache
 D:\Minhas coisas\Projetos viasula studio\SharpCoders\ProjetoHubDeJogos\HubGameplay\HubGameplay\obj\Debug\net6.0\ref\HubGameplay.dll
+D:\Minhas coisas\Projetos viasula studio\SharpCoders\ProjetoHubDeJogos\HubGameplay\HubGameplay\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Minhas coisas\Projetos viasula studio\SharpCoders\ProjetoHubDeJogos\HubGameplay\HubGameplay\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+D:\Minhas coisas\Projetos viasula studio\SharpCoders\ProjetoHubDeJogos\HubGameplay\HubGameplay\obj\Debug\net6.0\HubGameplay.csproj.CopyComplete

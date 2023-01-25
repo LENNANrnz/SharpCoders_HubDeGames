@@ -1,5 +1,7 @@
 ﻿using HubDeGames.Entities;
 using HubDeGames.View;
+using HubGameplay.Models;
+using System.Xml.Schema;
 
 namespace HubGameplay
 {
@@ -12,24 +14,31 @@ namespace HubGameplay
 
 
             string choise;
-
-            Hub.MenuInicial();
-
-            choise = Console.ReadLine();
-
-            switch (choise)
+            do
             {
-                case "1": 
-                    break;
-                case "2":
-                    Jogador.Cadastrar();
-                    break;
-                case "3": Jogador.RankingJogodaVelha();
-                    break;
-                case "0":
-                    break;
+                Hub.MenuInicial();
 
-            }
+                choise = Console.ReadLine();
+
+                switch (choise)
+                {
+                    case "1":
+                        Playersids player = new Playersids();
+                        Jogador.Login(player);
+                        break;
+                    case "2":
+                        Jogador.Cadastrar();
+                        break;
+                    case "3":
+                        Jogador.ListarContas();
+                        break;
+                    case "0":
+                        break;
+
+                }
+
+            } while (choise != "0");
+
 
         }
     }
