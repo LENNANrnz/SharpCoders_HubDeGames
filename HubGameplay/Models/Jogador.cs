@@ -59,9 +59,6 @@ namespace HubDeGames.Entities
             int z = 0;
             int y = 0;
 
-
-
-
             // Login player 1
             Console.Write("Digite o nome de usuário do player 1: ");
             nameplayer1 = Console.ReadLine();
@@ -70,9 +67,6 @@ namespace HubDeGames.Entities
 
 
             z = result.IndexOf(nameplayer1);
-
-
-
 
             if (z == -1)
             {
@@ -87,9 +81,6 @@ namespace HubDeGames.Entities
             result = lista.Where(x => x.Senha != null).Select(x => x.Senha).ToList();
             z = result.IndexOf(passwordplayer1);
 
-
-
-
             if (z == -1)
             {
                 Console.WriteLine("Senha incorreta, tente novamente");
@@ -101,8 +92,6 @@ namespace HubDeGames.Entities
                 Console.WriteLine();
                 Console.WriteLine("Login Player 1 Feito com sucesso.");
                 Console.WriteLine();
-
-
             }
 
             //Login Player 2
@@ -116,7 +105,6 @@ namespace HubDeGames.Entities
                 return;
 
             }
-
             result = lista.Where(x => x.Nickname != null).Select(x => x.Nickname).ToList();
             y = result.IndexOf(nameplayer2);
 
@@ -125,9 +113,7 @@ namespace HubDeGames.Entities
                 Console.WriteLine("Usuário não encontrado, tente novamente");
                 return;
             }
-
             Console.Write("Digite a senha do Player 2: ");
-
             passwordplayer2 = Console.ReadLine();
 
             if (lista[y].Nickname == nameplayer2 && lista[y].Senha == passwordplayer2)
@@ -135,42 +121,32 @@ namespace HubDeGames.Entities
                 Console.WriteLine();
                 Console.WriteLine("Login Player 2 Feito com sucesso.");
                 Console.WriteLine();
-
-
             }
-
             else
             {
                 Console.WriteLine("Senha incorreta, tente novamente");
                 return;
 
             }
-
             playerid.id1 = z;
             playerid.id2 = y;
             playerid.logou = true;
-
         }
         public static void ListarContas()
         {
             string arquivojson = @"D:\\Minhas coisas\\Projetos viasula studio\\SharpCoders\\ProjetoHubDeJogos\\HubGameplay\\HubGameplay\\Players.json";
-            string nome, senha, nickname;
             var option = new JsonSerializerOptions { WriteIndented = true };
             string jsonlines = File.ReadAllText(arquivojson);
             List<Jogador>? lista;
             lista = System.Text.Json.JsonSerializer.Deserialize<List<Jogador>>(jsonlines, option);
-
-
             foreach (Jogador jogador in lista)
             {
-                Console.WriteLine(jogador);
+                Console.WriteLine($"Nome: {jogador.Nome} Nickname: {jogador.Nickname}\n");
             }
 
         }
         public static void Cadastrar()
-
         {
-
             try
             {
                 string arquivojson = @"D:\\Minhas coisas\\Projetos viasula studio\\SharpCoders\\ProjetoHubDeJogos\\HubGameplay\\HubGameplay\\Players.json";
@@ -192,7 +168,6 @@ namespace HubDeGames.Entities
                 {
                     lista = System.Text.Json.JsonSerializer.Deserialize<List<Jogador>>(jsonlines, option);
                 }
-
                 Console.Write("Digite seu nome: ");
                 nome = Console.ReadLine();
                 Console.Write("Digite sua senha: ");
@@ -203,8 +178,6 @@ namespace HubDeGames.Entities
                 var result = lista.Where(x => x.Nickname != null).Select(x => x.Nickname).ToList();
 
                 int z = result.IndexOf(nickname);
-
-
 
                 while (z != -1)
                 {
@@ -220,7 +193,6 @@ namespace HubDeGames.Entities
 
                 string playerjson = System.Text.Json.JsonSerializer.Serialize(lista, option);
                 File.WriteAllText(arquivojson, playerjson);
-
 
             }
             catch (Exception ex)
