@@ -43,6 +43,16 @@ namespace HubDeGames.Entities
             List<Jogador>? lista;
             lista = System.Text.Json.JsonSerializer.Deserialize<List<Jogador>>(jsonlines, option);
 
+            
+            var ranking = lista.OrderByDescending(o => o.PontosTotaisJogodaVelha);
+
+            int count = 1;
+            foreach (var item in ranking)
+            {
+                Console.WriteLine(count + ". " + item.Nickname + " - Pontos: " + item.PontosTotaisJogodaVelha);
+                count++;
+            }
+
 
 
         }
