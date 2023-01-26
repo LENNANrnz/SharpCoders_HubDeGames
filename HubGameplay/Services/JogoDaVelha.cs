@@ -1,15 +1,25 @@
-﻿using System;
+﻿using HubDeGames.Entities;
+using HubDeGames.View;
+using HubGameplay.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace HubDeGames.Services
 {
     public class JogoDaVelha
     {
-        public void PlayJogoDaVelha(int player1id, int player2id)
+        public static void PlayJogoDaVelha(Playersids player)
         {
+
+            string arquivojson = @"D:\\Minhas coisas\\Projetos viasula studio\\SharpCoders\\ProjetoHubDeJogos\\HubGameplay\\HubGameplay\\Players.json";
+            var option = new JsonSerializerOptions { WriteIndented = true };
+            string jsonlines = File.ReadAllText(arquivojson);
+            List<Jogador>? lista;
+            lista = System.Text.Json.JsonSerializer.Deserialize<List<Jogador>>(jsonlines, option);
 
             string[] jogo = new string[] { "0", "1", "2", "3", "4", "5", "6", "7", "8" };
             string valorMarcado;
@@ -17,9 +27,7 @@ namespace HubDeGames.Services
             bool player2win = false;
             bool empate = false;
             int contadorponto = 1;
-            int ContaEmpate = 0;
-            int contadopontopl1 = 0;
-            int contadopontopl2 = 0;
+
 
 
             for (int i = 0; i <= 9; i++)
@@ -41,13 +49,13 @@ namespace HubDeGames.Services
 
                     if (i % 2 != 0)
                     {
-                        Console.WriteLine($"o ganhador é  ");
+                        Console.WriteLine($"o ganhador é {lista[player.id1].Nickname}");
                         player1win = true;
                         break;
                     }
                     else if (i % 2 == 0)
                     {
-                        Console.WriteLine($"o ganhador é  ");
+                        Console.WriteLine($"o ganhador é {lista[player.id2].Nickname}");
                         player2win = true;
                         break;
                     }
@@ -64,7 +72,7 @@ namespace HubDeGames.Services
 
                 if (i % 2 == 0)
                 {
-                    Console.Write($"Sua vez  ,digite o numero que deseja marcar o X: ");
+                    Console.Write($"Sua vez {lista[player.id1].Nickname},digite o numero que deseja marcar o X: ");
                     valorMarcado = Console.ReadLine();
 
                     while (valorMarcado != "0" && valorMarcado != "1" && valorMarcado != "2" && valorMarcado != "3" && valorMarcado != "4"
@@ -113,7 +121,7 @@ namespace HubDeGames.Services
 
                 else if (i % 2 != 0)
                 {
-                    Console.Write($"Sua vez,digite o numero que deseja marcar o O: ");
+                    Console.Write($"Sua vez {lista[player.id2].Nickname},digite o numero que deseja marcar o O: ");
                     valorMarcado = Console.ReadLine();
                     while (valorMarcado != "0" && valorMarcado != "1" && valorMarcado != "2" && valorMarcado != "3" && valorMarcado != "4"
                   && valorMarcado != "5" && valorMarcado != "6" && valorMarcado != "7" && valorMarcado != "8")
@@ -156,24 +164,39 @@ namespace HubDeGames.Services
             Console.WriteLine();
 
 
-
             //Contador tabela
 
             if (player1win == true)
             {
-
+                lista[player.id1].PontosTotaisJogodaVelha += contadorponto;
+                string playerjson = System.Text.Json.JsonSerializer.Serialize(lista, option);
+                File.WriteAllText(arquivojson, playerjson);
 
             }
             else if (player2win == true)
             {
-
+                lista[player.id2].PontosTotaisJogodaVelha += contadorponto;
+                string playerjson = System.Text.Json.JsonSerializer.Serialize(lista, option);
+                File.WriteAllText(arquivojson, playerjson);
 
             }
+
             string choise;
             do
             {
+                Hub.Menuvoltar();
                 choise = Console.ReadLine();
+                switch (choise)
+                {
+                    case "1":
+                        Jogador.RankingJogodaVelha();
+                        break;
+                    case "0": 
+                        return;
+                }
             } while (choise != "0");
+
+
 
 
 

@@ -33,9 +33,10 @@ namespace HubDeGames.View
             Console.WriteLine();
             Console.WriteLine("1 - Jogo Da Velha");
             Console.WriteLine();
-            Console.WriteLine("2 - Jogo XXXXX");
+            Console.WriteLine("2 - Batalha Naval");
             Console.WriteLine();
-            
+            Console.WriteLine("0 - Fechar Programa");
+            Console.WriteLine();      
             Console.Write("Escolha um dos jogos acima: ");
         }
 
@@ -49,6 +50,15 @@ namespace HubDeGames.View
 
             Console.Write("Escolha um dos jogos acima: ");
 
+        }
+
+        public static void Menuvoltar()
+        {
+            Console.WriteLine("1 - Ver Ranking");
+            Console.WriteLine();
+            Console.WriteLine("0 - Voltar");
+            Console.WriteLine();
+            Console.Write("Escolha uma das opções: ");
         }
 
 

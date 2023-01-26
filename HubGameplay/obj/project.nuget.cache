@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "kAuhD/4AC1FOLoTITqnQ09iEgXeeCwRvTf2vd7BoaCGYNtVsjcX8bOTmcPB81WnQtRBiGKuh7gTcRKXsYQkHgQ==",
+  "dgSpecHash": "a0Ouxcl3rDTFCnFg+WPpLLOU1hn2QxIiOWeT0nNrHJMtOSFg4jU9tuKI8H7k+5SUrVhGrS3usJi6LEees8oEOQ==",
   "success": true,
   "projectFilePath": "D:\\Minhas coisas\\Projetos viasula studio\\SharpCoders\\ProjetoHubDeJogos\\HubGameplay\\HubGameplay\\HubGameplay.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\lenna\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
+    "C:\\Users\\lenna\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
