@@ -139,6 +139,8 @@ namespace HubGameplay.Services
                     Console.WriteLine($"{lista[jogadorezz.id1].Nickname} e {lista[jogadorezz.id2].Nickname} ganharam!");
                     lista[jogadorezz.id1].PontosTotaisBatalhaNaval += 1;
                     lista[jogadorezz.id2].PontosTotaisBatalhaNaval += 1;
+                    string playerjson = System.Text.Json.JsonSerializer.Serialize(lista, option);
+                    File.WriteAllText(arquivojson, playerjson);
                     break;
                 }
                 else if (computerShips == 0)
