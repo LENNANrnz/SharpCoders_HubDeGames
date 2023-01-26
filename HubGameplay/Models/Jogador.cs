@@ -11,13 +11,12 @@ namespace HubDeGames.Entities
 
         protected Jogador(in object value)
         {
-
         }
-
         public string Nome { get; set; }
         public string Senha { get; set; }
         public string Nickname { get; set; }
         public int PontosTotaisJogodaVelha { get; set; }
+        public int PontosTotaisBatalhaNaval { get; set; }
 
         public Jogador() { }
 
@@ -57,6 +56,25 @@ namespace HubDeGames.Entities
 
         }
 
+        public static void RankingBatalhaNaval()
+        {
+            string arquivojson = @"D:\\Minhas coisas\\Projetos viasula studio\\SharpCoders\\ProjetoHubDeJogos\\HubGameplay\\HubGameplay\\Players.json";
+            var option = new JsonSerializerOptions { WriteIndented = true };
+            string jsonlines = File.ReadAllText(arquivojson);
+            List<Jogador>? lista;
+            lista = System.Text.Json.JsonSerializer.Deserialize<List<Jogador>>(jsonlines, option);
+
+
+            var ranking = lista.OrderByDescending(o => o.PontosTotaisBatalhaNaval);
+
+            int count = 1;
+            foreach (var item in ranking)
+            {
+                Console.WriteLine(count + ". " + item.Nickname + " - Pontos: " + item.PontosTotaisBatalhaNaval);
+                count++;
+            }
+        }
+      
         public static void Login(Playersids playerid)
         {
             string arquivojson = @"D:\\Minhas coisas\\Projetos viasula studio\\SharpCoders\\ProjetoHubDeJogos\\HubGameplay\\HubGameplay\\Players.json";
@@ -215,7 +233,7 @@ namespace HubDeGames.Entities
         }
         public override string ToString()
         {
-            return $" Nome: {Nome}\n Senha: {Senha}\n Nick: {Nickname}\n Pontos Jogo Da Velha: {PontosTotaisJogodaVelha} \n";
+            return $" Nome: {Nome}\n Senha: {Senha}\n Nick: {Nickname}\n Pontos Jogo Da Velha: {PontosTotaisJogodaVelha} \n Pontos Batalha Naval: {PontosTotaisBatalhaNaval}\n";
         }
 
 

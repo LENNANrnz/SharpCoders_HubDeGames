@@ -2,6 +2,7 @@
 using HubDeGames.Services;
 using HubDeGames.View;
 using HubGameplay.Models;
+using HubGameplay.Services;
 using System.Xml.Schema;
 
 namespace HubGameplay
@@ -12,6 +13,10 @@ namespace HubGameplay
 
         public static void Main()
         {
+           
+           
+
+            
             Playersids player = new Playersids();
             string choise;
             do
@@ -36,6 +41,7 @@ namespace HubGameplay
                                     case "1": JogoDaVelha.PlayJogoDaVelha(player);
                                         break;
                                     case "2":
+                                        BatalhaNaval.PlayBatalhaNaval(player);
                                         break;
                                     case "0": Environment.Exit(0);
                                         break;
@@ -55,7 +61,7 @@ namespace HubGameplay
                 }
 
             } while (choise != "0");
-
+           
 
         }
     }

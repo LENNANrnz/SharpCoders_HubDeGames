@@ -3,18 +3,28 @@
     "Nome": "Lennan",
     "Senha": "123456",
     "Nickname": "lennanrnz",
-    "PontosTotaisJogodaVelha": 4
+    "PontosTotaisJogodaVelha": 4,
+    "PontosTotaisBatalhaNaval": 0
   },
   {
     "Nome": "matheus",
     "Senha": "12345",
     "Nickname": "matheuszin",
-    "PontosTotaisJogodaVelha": 4
+    "PontosTotaisJogodaVelha": 4,
+    "PontosTotaisBatalhaNaval": 0
   },
   {
     "Nome": "guilherme",
     "Senha": "123",
     "Nickname": "guialves",
-    "PontosTotaisJogodaVelha": 0
+    "PontosTotaisJogodaVelha": 0,
+    "PontosTotaisBatalhaNaval": 0
+  },
+  {
+    "Nome": "daniel",
+    "Senha": "123",
+    "Nickname": "danialves",
+    "PontosTotaisJogodaVelha": 0,
+    "PontosTotaisBatalhaNaval": 0
   }
 ]

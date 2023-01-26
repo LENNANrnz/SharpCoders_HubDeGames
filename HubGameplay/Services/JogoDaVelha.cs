@@ -184,7 +184,7 @@ namespace HubDeGames.Services
             string choise;
             do
             {
-                Hub.Rankingjogodavelhamenu();
+                Hub.Menuvoltar();
                 choise = Console.ReadLine();
                 switch (choise)
                 {

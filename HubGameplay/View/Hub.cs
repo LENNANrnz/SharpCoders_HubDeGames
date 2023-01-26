@@ -52,7 +52,7 @@ namespace HubDeGames.View
 
         }
 
-        public static void Rankingjogodavelhamenu()
+        public static void Menuvoltar()
         {
             Console.WriteLine("1 - Ver Ranking");
             Console.WriteLine();
