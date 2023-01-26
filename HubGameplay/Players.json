@@ -10,7 +10,7 @@
     "Nome": "matheus",
     "Senha": "12345",
     "Nickname": "matheuszin",
-    "PontosTotaisJogodaVelha": 4,
+    "PontosTotaisJogodaVelha": 5,
     "PontosTotaisBatalhaNaval": 0
   },
   {
@@ -25,6 +25,20 @@
     "Senha": "123",
     "Nickname": "danialves",
     "PontosTotaisJogodaVelha": 0,
+    "PontosTotaisBatalhaNaval": 0
+  },
+  {
+    "Nome": "gabriel",
+    "Senha": "123",
+    "Nickname": "gabrielzin",
+    "PontosTotaisJogodaVelha": 1,
+    "PontosTotaisBatalhaNaval": 0
+  },
+  {
+    "Nome": "jessica",
+    "Senha": "123456",
+    "Nickname": "jess",
+    "PontosTotaisJogodaVelha": 1,
     "PontosTotaisBatalhaNaval": 0
   }
 ]
