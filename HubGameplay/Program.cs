@@ -4,6 +4,7 @@ using HubDeGames.View;
 using HubGameplay.Models;
 using HubGameplay.Services;
 using System.Xml.Schema;
+using Xadrez_console;
 
 namespace HubGameplay
 {
@@ -42,6 +43,8 @@ namespace HubGameplay
                                         break;
                                     case "2":
                                         BatalhaNaval.PlayBatalhaNaval(player);
+                                        break;
+                                        case "3": ChessGame.PlayChesGame(player);
                                         break;
                                     case "0": Environment.Exit(0);
                                         break;

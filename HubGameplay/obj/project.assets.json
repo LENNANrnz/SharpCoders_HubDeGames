@@ -107,11 +107,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Minhas coisas\\Projetos viasula studio\\SharpCoders\\ProjetoHubDeJogos\\HubGameplay\\HubGameplay\\HubGameplay.csproj",
+      "projectUniqueName": "D:\\Minhas coisas\\Projetos viasula studio\\SharpCoders\\Projeto HubDeJogos\\SharpCoders_HubDeGames\\HubGameplay\\HubGameplay.csproj",
       "projectName": "HubGameplay",
-      "projectPath": "D:\\Minhas coisas\\Projetos viasula studio\\SharpCoders\\ProjetoHubDeJogos\\HubGameplay\\HubGameplay\\HubGameplay.csproj",
+      "projectPath": "D:\\Minhas coisas\\Projetos viasula studio\\SharpCoders\\Projeto HubDeJogos\\SharpCoders_HubDeGames\\HubGameplay\\HubGameplay.csproj",
       "packagesPath": "C:\\Users\\lenna\\.nuget\\packages\\",
-      "outputPath": "D:\\Minhas coisas\\Projetos viasula studio\\SharpCoders\\ProjetoHubDeJogos\\HubGameplay\\HubGameplay\\obj\\",
+      "outputPath": "D:\\Minhas coisas\\Projetos viasula studio\\SharpCoders\\Projeto HubDeJogos\\SharpCoders_HubDeGames\\HubGameplay\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

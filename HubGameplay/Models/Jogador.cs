@@ -17,6 +17,7 @@ namespace HubDeGames.Entities
         public string Nickname { get; set; }
         public int PontosTotaisJogodaVelha { get; set; }
         public int PontosTotaisBatalhaNaval { get; set; }
+        public int PontosTotaisXadrez { get; set; }
 
         public Jogador() { }
 
@@ -36,7 +37,7 @@ namespace HubDeGames.Entities
 
         public static void RankingJogodaVelha()
         {
-            string arquivojson = @"D:\\Minhas coisas\\Projetos viasula studio\\SharpCoders\\ProjetoHubDeJogos\\HubGameplay\\HubGameplay\\Players.json";
+            string arquivojson = @"D:\Minhas coisas\Projetos viasula studio\SharpCoders\Projeto HubDeJogos\SharpCoders_HubDeGames\HubGameplay\Players.json";
             var option = new JsonSerializerOptions { WriteIndented = true };
             string jsonlines = File.ReadAllText(arquivojson);
             List<Jogador>? lista;
@@ -58,7 +59,7 @@ namespace HubDeGames.Entities
 
         public static void RankingBatalhaNaval()
         {
-            string arquivojson = @"D:\\Minhas coisas\\Projetos viasula studio\\SharpCoders\\ProjetoHubDeJogos\\HubGameplay\\HubGameplay\\Players.json";
+            string arquivojson = @"D:\Minhas coisas\Projetos viasula studio\SharpCoders\Projeto HubDeJogos\SharpCoders_HubDeGames\HubGameplay\Players.json";
             var option = new JsonSerializerOptions { WriteIndented = true };
             string jsonlines = File.ReadAllText(arquivojson);
             List<Jogador>? lista;
@@ -77,7 +78,7 @@ namespace HubDeGames.Entities
       
         public static void Login(Playersids playerid)
         {
-            string arquivojson = @"D:\\Minhas coisas\\Projetos viasula studio\\SharpCoders\\ProjetoHubDeJogos\\HubGameplay\\HubGameplay\\Players.json";
+            string arquivojson = @"D:\Minhas coisas\Projetos viasula studio\SharpCoders\Projeto HubDeJogos\SharpCoders_HubDeGames\HubGameplay\Players.json";
             string nome, senha, nickname;
             var option = new JsonSerializerOptions { WriteIndented = true };
             string jsonlines = File.ReadAllText(arquivojson);
@@ -162,7 +163,7 @@ namespace HubDeGames.Entities
         }
         public static void ListarContas()
         {
-            string arquivojson = @"D:\\Minhas coisas\\Projetos viasula studio\\SharpCoders\\ProjetoHubDeJogos\\HubGameplay\\HubGameplay\\Players.json";
+            string arquivojson = @"D:\Minhas coisas\Projetos viasula studio\SharpCoders\Projeto HubDeJogos\SharpCoders_HubDeGames\HubGameplay\Players.json";
             var option = new JsonSerializerOptions { WriteIndented = true };
             string jsonlines = File.ReadAllText(arquivojson);
             List<Jogador>? lista;
@@ -177,7 +178,7 @@ namespace HubDeGames.Entities
         {
             try
             {
-                string arquivojson = @"D:\\Minhas coisas\\Projetos viasula studio\\SharpCoders\\ProjetoHubDeJogos\\HubGameplay\\HubGameplay\\Players.json";
+                string arquivojson = @"D:\Minhas coisas\Projetos viasula studio\SharpCoders\Projeto HubDeJogos\SharpCoders_HubDeGames\HubGameplay\Players.json";
                 string nome, senha, nickname;
                 var option = new JsonSerializerOptions { WriteIndented = true };
 

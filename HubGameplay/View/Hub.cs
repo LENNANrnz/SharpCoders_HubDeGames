@@ -35,6 +35,8 @@ namespace HubDeGames.View
             Console.WriteLine();
             Console.WriteLine("2 - Batalha Naval");
             Console.WriteLine();
+            Console.WriteLine("3 - Xadrez");
+            Console.WriteLine();
             Console.WriteLine("0 - Fechar Programa");
             Console.WriteLine();      
             Console.Write("Escolha um dos jogos acima: ");

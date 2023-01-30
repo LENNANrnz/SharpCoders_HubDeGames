@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a0Ouxcl3rDTFCnFg+WPpLLOU1hn2QxIiOWeT0nNrHJMtOSFg4jU9tuKI8H7k+5SUrVhGrS3usJi6LEees8oEOQ==",
+  "dgSpecHash": "85nVICvYf1ME/TMt5ZwCh9GYHvUosfxQJzTM+F6dOYFhpkihc2LKTIKEOqLfvpIN67ijCcEMkWq6g0stG7OQ1A==",
   "success": true,
-  "projectFilePath": "D:\\Minhas coisas\\Projetos viasula studio\\SharpCoders\\ProjetoHubDeJogos\\HubGameplay\\HubGameplay\\HubGameplay.csproj",
+  "projectFilePath": "D:\\Minhas coisas\\Projetos viasula studio\\SharpCoders\\Projeto HubDeJogos\\SharpCoders_HubDeGames\\HubGameplay\\HubGameplay.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lenna\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
     "C:\\Users\\lenna\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
