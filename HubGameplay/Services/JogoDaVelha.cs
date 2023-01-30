@@ -15,7 +15,7 @@ namespace HubDeGames.Services
         public static void PlayJogoDaVelha(Playersids player)
         {
 
-            string arquivojson = @"D:\\Minhas coisas\\Projetos viasula studio\\SharpCoders\\ProjetoHubDeJogos\\HubGameplay\\HubGameplay\\Players.json";
+            string arquivojson = @"D:\Minhas coisas\Projetos viasula studio\SharpCoders\Projeto HubDeJogos\SharpCoders_HubDeGames\HubGameplay\Players.json";
             var option = new JsonSerializerOptions { WriteIndented = true };
             string jsonlines = File.ReadAllText(arquivojson);
             List<Jogador>? lista;

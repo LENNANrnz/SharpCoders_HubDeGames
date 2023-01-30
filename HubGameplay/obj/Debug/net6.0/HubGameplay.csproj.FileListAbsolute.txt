@@ -16,3 +16,21 @@ D:\Minhas coisas\Projetos viasula studio\SharpCoders\ProjetoHubDeJogos\HubGamepl
 D:\Minhas coisas\Projetos viasula studio\SharpCoders\ProjetoHubDeJogos\HubGameplay\HubGameplay\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\Minhas coisas\Projetos viasula studio\SharpCoders\ProjetoHubDeJogos\HubGameplay\HubGameplay\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 D:\Minhas coisas\Projetos viasula studio\SharpCoders\ProjetoHubDeJogos\HubGameplay\HubGameplay\obj\Debug\net6.0\HubGameplay.csproj.CopyComplete
+D:\Minhas coisas\Projetos viasula studio\SharpCoders\Projeto HubDeJogos\SharpCoders_HubDeGames\HubGameplay\bin\Debug\net6.0\HubGameplay.exe
+D:\Minhas coisas\Projetos viasula studio\SharpCoders\Projeto HubDeJogos\SharpCoders_HubDeGames\HubGameplay\bin\Debug\net6.0\HubGameplay.deps.json
+D:\Minhas coisas\Projetos viasula studio\SharpCoders\Projeto HubDeJogos\SharpCoders_HubDeGames\HubGameplay\bin\Debug\net6.0\HubGameplay.runtimeconfig.json
+D:\Minhas coisas\Projetos viasula studio\SharpCoders\Projeto HubDeJogos\SharpCoders_HubDeGames\HubGameplay\bin\Debug\net6.0\HubGameplay.dll
+D:\Minhas coisas\Projetos viasula studio\SharpCoders\Projeto HubDeJogos\SharpCoders_HubDeGames\HubGameplay\bin\Debug\net6.0\HubGameplay.pdb
+D:\Minhas coisas\Projetos viasula studio\SharpCoders\Projeto HubDeJogos\SharpCoders_HubDeGames\HubGameplay\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Minhas coisas\Projetos viasula studio\SharpCoders\Projeto HubDeJogos\SharpCoders_HubDeGames\HubGameplay\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+D:\Minhas coisas\Projetos viasula studio\SharpCoders\Projeto HubDeJogos\SharpCoders_HubDeGames\HubGameplay\obj\Debug\net6.0\HubGameplay.csproj.AssemblyReference.cache
+D:\Minhas coisas\Projetos viasula studio\SharpCoders\Projeto HubDeJogos\SharpCoders_HubDeGames\HubGameplay\obj\Debug\net6.0\HubGameplay.GeneratedMSBuildEditorConfig.editorconfig
+D:\Minhas coisas\Projetos viasula studio\SharpCoders\Projeto HubDeJogos\SharpCoders_HubDeGames\HubGameplay\obj\Debug\net6.0\HubGameplay.AssemblyInfoInputs.cache
+D:\Minhas coisas\Projetos viasula studio\SharpCoders\Projeto HubDeJogos\SharpCoders_HubDeGames\HubGameplay\obj\Debug\net6.0\HubGameplay.AssemblyInfo.cs
+D:\Minhas coisas\Projetos viasula studio\SharpCoders\Projeto HubDeJogos\SharpCoders_HubDeGames\HubGameplay\obj\Debug\net6.0\HubGameplay.csproj.CoreCompileInputs.cache
+D:\Minhas coisas\Projetos viasula studio\SharpCoders\Projeto HubDeJogos\SharpCoders_HubDeGames\HubGameplay\obj\Debug\net6.0\HubGameplay.csproj.CopyComplete
+D:\Minhas coisas\Projetos viasula studio\SharpCoders\Projeto HubDeJogos\SharpCoders_HubDeGames\HubGameplay\obj\Debug\net6.0\HubGameplay.dll
+D:\Minhas coisas\Projetos viasula studio\SharpCoders\Projeto HubDeJogos\SharpCoders_HubDeGames\HubGameplay\obj\Debug\net6.0\refint\HubGameplay.dll
+D:\Minhas coisas\Projetos viasula studio\SharpCoders\Projeto HubDeJogos\SharpCoders_HubDeGames\HubGameplay\obj\Debug\net6.0\HubGameplay.pdb
+D:\Minhas coisas\Projetos viasula studio\SharpCoders\Projeto HubDeJogos\SharpCoders_HubDeGames\HubGameplay\obj\Debug\net6.0\HubGameplay.genruntimeconfig.cache
+D:\Minhas coisas\Projetos viasula studio\SharpCoders\Projeto HubDeJogos\SharpCoders_HubDeGames\HubGameplay\obj\Debug\net6.0\ref\HubGameplay.dll
